@@ -49,16 +49,18 @@ class PSWGenerate extends Component {
         return (
             <>
                 <div className="title">
-                    Password Strength
+                    Check Your<br />
+                    <span>Password Strength</span>
                 </div>
                 <div className="content">
                     <form action="">
                         <input onChange={this.handleChange('password')} type="text" placeholder="Enter Password" />
+                        <p>Your password must contain:</p>
                         <div>
-                            <div className={passwordLength ? 'green' : null}>8 Characters</div>
-                            <div className={containsNumbers ? 'green' : null}>Numbers</div>
-                            <div className={isUppercase ? 'green' : null}>Contains UPPERCASE</div>
-                            <div className={containsSymbols ? 'green' : null}>Contains Symbols</div>
+                            <div className={passwordLength ? 'green' : null}>&#10003; Eight Characters</div>
+                            <div className={containsNumbers ? 'green' : null}>&#10003; Numbers</div>
+                            <div className={isUppercase ? 'green' : null}>&#10003; Uppercase Letter/s</div>
+                            <div className={containsSymbols ? 'green' : null}>&#10003; Symbol Present</div>
                         </div>
                     </form>
                 </div>
