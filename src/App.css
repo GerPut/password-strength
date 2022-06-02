@@ -38,10 +38,34 @@ input {
   padding: 5px 10px;
   color: #000;
   font-size: 3rem;
-  outline-color: #D5D4D8;
+  outline-color: #eae9eb;
+}
+
+::placeholder{
+  color:#e4e2e5;
 }
 
 .green {
   font-weight: bold;
   color: #10B981;
 }
+
+.strength{
+ display:flex;
+ justify-content: space-between;
+ margin-right: 90px;
+}
+
+.strength-text{
+  display:flex;
+  justify-content: space-between;
+}
+
+#word{
+  margin-right: 130px;
+}
+
+.red{
+  display:none;
+}
+
